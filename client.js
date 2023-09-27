@@ -19,14 +19,9 @@ const connect = () => {
 
   
 
- 
-  
-
     conn.on("data", (data) => {
     console.log(data);
   });
-
-
 
   return conn;
 };
