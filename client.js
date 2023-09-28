@@ -22,6 +22,8 @@ const connect = () => {
     conn.on("data", (data) => {
     console.log(data);
   });
+conn.on("close", process.exit);
+
 
   return conn;
 };

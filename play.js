@@ -9,16 +9,11 @@ const { setupInput } = require("./input");
 
 console.log("connecting ... ");
 
-connect();
+const conn = connect();
 
 
 
-setupInput();
+setupInput(conn);
 
-
-
-// conn.on("connect", () => {
-//   console.log('You have connected to the server');
-// });
 
 
