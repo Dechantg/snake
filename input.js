@@ -12,7 +12,16 @@ const handleUserInput = (stdin, conn) => {
   };
   if (stdin === "a") {
     conn.write("Move: left")
+  };
+  if (stdin === "g") {
+    conn.write("Say: GG")
   }; 
+  if (stdin === "f") {
+    conn.write("Say: f for respect")
+  }; 
+  if (stdin === "n") {
+    conn.write("Say: NOOOOO ;(")
+  };  
   // if (stdin === "w") console.log("Move: up");;
   // if (stdin === "s") console.log("Move: down");
   // if (stdin === "d") console.log("Move: right");

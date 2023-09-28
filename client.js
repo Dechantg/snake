@@ -1,11 +1,16 @@
 // connect function from snake
 
 const net = require("net");
+const { IP, PORT } = require("./constants");
+
+console.log(IP);
+console.log(PORT);
+
 
 const connect = () => {
   const conn = net.createConnection({
-    host: "165.227.47.243",
-    port: 50541
+    host: IP,
+    port: PORT
   });
 
   // set data encoder
