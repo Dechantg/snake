@@ -20,14 +20,14 @@ const connect = () => {
     conn.write("Name: GJD");
 
    
-});
+  });
 
   
 
-    conn.on("data", (data) => {
+  conn.on("data", (data) => {
     console.log(data);
   });
-conn.on("close", process.exit);
+  conn.on("close", process.exit);
 
 
   return conn;
@@ -37,4 +37,4 @@ conn.on("close", process.exit);
 
 module.exports = {
   connect
-  };
+};
